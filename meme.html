@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="meme.css" rel="stylesheet">
+    <title>Meme Generator</title>
+</head>
+<body>
+
+<div id="main">
+    <div id="memeGenerator">
+        <h1>Meme Generator</h1>
+        <form id="form-input">
+            <lable class="label" for="image">Import your image URL</lable>
+            <input type="url" id="image-link" name="image" placeholder="Paste image address" value="https://blog.loomly.com/wp-content/uploads/2019/06/earth.gif" required>                
+        </form>
+        <form id="form-top">     
+            <lable class="label" for= "top"> Text on Top</lable>
+            <input type="text" id="top" name="top" placeholder="(optional) Top Text" value="">
+        </form>
+        <form id="form-bottom">
+            <lable class="label" for="bottom">Text on Bottom</lable>
+            <input type="text" id="bottom" name="bottom" placeholder="(optional) Bottom Text" value="">
+        </form>
+            <button id="button" type="submit">Add Meme</button>
+        </form>        
+    </div>
+
+    <h1>Your meme here &darr;</h1>
+
+    <div id="meme-container">
+        <!-- New divs add here -->
+    </div>
+
+</div>
+<div id="footer">
+    <p>&copy; created by Liam Ng</p>
+</div>
+
+<script src="meme.js"></script>
+    
+</body>
+</html>
